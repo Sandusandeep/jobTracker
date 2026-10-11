@@ -25,7 +25,7 @@ npm start
 - Interactive job application tracker with search, stage filters, follow-up reminders, edit/remove, and CSV export.
 - Three original downloadable resources: a job application tracker, weekly plan, and interview story bank.
 - About, privacy, terms, and contact pages.
-- Static site generation, sitemap, robots metadata, and custom icon.
+- Static site generation, canonical URLs, route-specific metadata, structured data, a generated social-sharing image, sitemap, robots metadata, and custom icon.
 - No account system, database, analytics, ads, affiliate links, or live API integration. Tracker entries stay in browser local storage and are never sent to the site.
 
 The free browser tracker and downloads work without an account. Tracker entries are saved only in the current browser on the current device; users should export a CSV backup before clearing browser data or switching devices. The paid products are concepts; no purchase or payment is active until the owner creates and reviews the finished files, opens a seller account, configures hosted product pages, and updates the applicable product, privacy, and purchase terms. Checkout URLs are only enabled when a valid HTTPS URL is configured.

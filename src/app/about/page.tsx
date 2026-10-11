@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "About Role Ready's practical templates for organizing a job search.",
+  title: "About Role Ready",
+  description:
+    "Learn why Role Ready makes simple, privacy-conscious job-search tools and editable templates for early-career job seekers.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

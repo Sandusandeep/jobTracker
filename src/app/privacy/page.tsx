@@ -4,6 +4,9 @@ import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 export const metadata: Metadata = {
   title: "Privacy",
   description: "How Role Ready handles information on this static template website.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {

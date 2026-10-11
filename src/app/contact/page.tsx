@@ -4,8 +4,11 @@ import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 const contactEmail = "sandeepcw54@gmail.com";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contact Role Ready about the templates or site.",
+  title: "Contact Role Ready",
+  description: "Contact Role Ready with feedback, corrections, or questions about the free job-search tools.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

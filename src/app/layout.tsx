@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { siteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -7,21 +8,32 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: process.env.NEXT_PUBLIC_SITE_URL
-    ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-    : undefined,
+  metadataBase: siteUrl,
   applicationName: "Role Ready",
   title: {
-    default: "Role Ready — A calmer job search, one small system at a time",
+    default: "Free Job Search Tools & Application Tracker",
     template: "%s | Role Ready",
   },
   description:
-    "Simple, editable job-search templates for early-career developers. Track applications, plan your week, and prepare for interviews without another subscription.",
+    "Free job-search tools for early-career developers: track applications, plan your week, and prepare interview stories with simple editable resources.",
   openGraph: {
     type: "website",
     siteName: "Role Ready",
-    title: "Role Ready — A calmer job search",
-    description: "Practical, editable templates to help early-career developers organize their job search.",
+    title: "Free Job Search Tools & Application Tracker | Role Ready",
+    description:
+      "Organize applications, follow-ups, and interview preparation with Role Ready's free browser tracker and editable job-search resources.",
+    url: siteUrl.toString(),
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Job Search Tools & Application Tracker | Role Ready",
+    description:
+      "Organize applications, follow-ups, and interview preparation with free, editable job-search tools.",
+    images: [new URL("/opengraph-image", siteUrl).toString()],
+  },
+  alternates: {
+    canonical: "/",
   },
   robots: {
     index: true,

@@ -5,6 +5,9 @@ import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 export const metadata: Metadata = {
   title: "Terms",
   description: "Terms for using the Role Ready template website.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

@@ -3,8 +3,12 @@ import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 export const metadata: Metadata = {
-  title: "Free job-search tools",
-  description: "Download simple job application and interview-preparation worksheets.",
+  title: "Free Job Search Templates & Worksheets",
+  description:
+    "Download a free job application tracker spreadsheet, weekly job-search planner, and interview story bank worksheet. No account required.",
+  alternates: {
+    canonical: "/resources",
+  },
 };
 
 const downloads = [
